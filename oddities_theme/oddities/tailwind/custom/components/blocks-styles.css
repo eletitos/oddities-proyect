@@ -1,0 +1,38 @@
+.is-style-big-heading
+{
+	@apply text-[53px] sm:text-[65px] md:text-[85px] xl:text-[120px];
+}
+
+/* Oddities forms */
+/* ***************************** */
+.is-style-oddities-form, .is-style-oddities-form-blue
+{
+	@apply max-w-[1000px];
+}
+
+.is-style-oddities-form input:not([type=checkbox]){
+	@apply w-full rounded-full border-2 border-blue px-4 py-3 font-display text-[13px];
+}
+.is-style-oddities-form-blue input:not([type=checkbox]){
+	@apply w-full rounded-full border-2 border-blue px-4 py-3 font-display text-[13px] bg-sky;
+}
+
+.is-style-oddities-form textarea{
+	@apply w-full rounded-lg border-2 border-blue px-4 py-3 text-blue font-display text-[13px];
+}
+
+.is-style-oddities-form-blue textarea{
+	@apply w-full rounded-lg border-2 border-blue px-4 py-3 text-blue font-display text-[13px] bg-sky;
+}
+
+.is-style-oddities-form input[type="submit"], .is-style-oddities-form-blue input[type="submit"]{
+	@apply bg-yellow cursor-pointer md:hover:bg-lilac;
+}
+
+
+/* Group full whide content */
+/* ***************************** */
+.is-style-full-with-content > *
+{
+	@apply px-0 !important;
+}

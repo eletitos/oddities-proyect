@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/icon-list",
+	"version": "0.1.0",
+	"title": "Elena Icon List",
+	"category": "vivra-blocks",
+	"icon": "editor-ul",
+	"description": "Icon list",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

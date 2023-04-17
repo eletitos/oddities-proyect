@@ -1,0 +1,143 @@
+textarea::placeholder{
+	@apply text-blue;
+}
+
+
+/* Forms  */
+.woocommerce form.login, .woocommerce form.register{
+	@apply border-none mt-0 pt-0;
+}
+
+.woocommerce form.login button,
+.woocommerce form.woocommerce-form-register button,
+.woocommerce form.woocommerce-ResetPassword button,
+.woocommerce-account #content .woocommerce form button.button
+{
+	@apply bg-yellow rounded-full text-blue hover:bg-lilac hover:text-blue px-6 py-4 mt-6 font-display text-[13px] h-[51px] border-blue;
+	border: solid 2px;
+}
+
+.woocommerce-account #content .woocommerce form button.button{
+	@apply w-full;
+}
+
+#content .woocommerce input{
+	@apply text-blue px-6 py-4 text-[13px] rounded-full font-display ;
+}
+
+#content .woocommerce .form-row {
+	@apply mt-6;
+}
+
+#content .woocommerce .form-row-first, #content .woocommerce .form-row-last{
+	@apply mb-6;
+}
+
+input::placeholder{
+	@apply text-blue;
+}
+
+/* Autocomplete forms */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--wp--preset--color--blue);
+}
+
+textarea{
+	@apply border-2 border-blue rounded-lg;
+}
+
+textarea:focus, textarea:focus-visible, input:focus-visible{
+	@apply outline-0 border-[3px];
+}
+
+
+/* Review forms */
+/* .woocommerce.single-product #commentform textarea{
+	@apply p-2;
+} */
+
+.woocommerce #reviews #comment{
+	@apply p-2;
+	height: unset;
+}
+
+.woocommerce #reviews #comment::placeholder{
+	@apply font-display text-[13px];
+}
+
+.woocommerce #review_form #respond input#submit{
+	@apply bg-yellow rounded-full text-blue hover:bg-lilac hover:text-blue px-6 py-4 uppercase font-display text-[13px] h-[51px] border-blue w-full;
+	border: solid 2px;
+}
+
+/* Checkout form  */
+
+#content .woocommerce .checkout input, .woocommerce-account  #content .woocommerce input
+{
+	@apply border-blue border-2 font-base;
+}
+
+#content .woocommerce .checkout input[type="checkbox"]
+{
+	@apply mr-3;
+}
+
+#content .woocommerce .checkout .woocommerce-billing-fields__field-wrapper .form-row > label,
+.woocommerce .checkout .woocommerce-shipping-fields__field-wrapper .form-row > label,
+.woocommerce .checkout .woocommerce-account-fields .create-account .form-row > label,
+.woocommerce .checkout .woocommerce-additional-fields__field-wrapper .form-row > label,
+#content .woocommerce .checkout .select2-selection__arrow,
+.woocommerce-account .woocommerce-address-fields__field-wrapper .form-row > label,
+.woocommerce-account #content .woocommerce .select2-selection__arrow,
+.woocommerce-account #content .woocommerce-EditAccountForm > .form-row > label
+{
+	@apply hidden;
+}
+
+#content .woocommerce .checkout .select2-selection__rendered,
+.woocommerce-account #content .woocommerce .select2-selection__rendered
+{
+	@apply leading-none text-blue font-base;
+}
+
+#content .woocommerce .checkout .select2-selection,
+.woocommerce-account #content .woocommerce .select2-selection
+{
+	@apply h-auto border-blue rounded-full px-6 py-4 border-2 text-[13px];
+}
+
+.woocommerce form .form-row-first, .woocommerce form .form-row-last{
+	width: 49%;
+}
+
+/* Checkbox  */
+
+input[type="checkbox"]{
+    accent-color: var(--wp--preset--color--blue);
+    width: 17px;
+    height: 17px;
+}
+
+#content .woocommerce .checkout .woocommerce-account-fields .create-account{
+	@apply p-0;
+}
+
+#content .woocommerce .checkout .woocommerce-account-fields span{
+	@apply font-bold text-xl;
+}
+
+.woocommerce form .form-row .input-checkbox{
+	@apply pr-2;
+}
+
+.woocommerce .checkout .woocommerce-additional-fields__field-wrapper textarea{
+	@apply h-52 p-5 text-[13px];
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/oddities-accordion",
+	"version": "0.1.0",
+	"title": "Oddities accordion",
+	"category": "vivra-blocks",
+	"icon": "smiley",
+	"description": "Accordioncle block for guttenberg.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"isExpanded": {
+			"type": "boolean",
+			"default": false
+		},
+		"backgroundColor": {
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,124 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#404040",
+					"name": "Foreground"
+				},
+				{
+					"slug": "blue",
+					"color": "#2B39D0",
+					"name": "Blue"
+				},
+				{
+					"slug": "ligth-blue",
+					"color": "#D1DCFF",
+					"name": "Ligth Blue"
+				},
+				{
+					"slug": "pink",
+					"color": "#F05C7C",
+					"name": "Pink"
+				},
+				{
+					"slug": "red",
+					"color": "#F72F32",
+					"name": "Red"
+				},
+				{
+					"slug": "yellow",
+					"color": "#E9FAA2",
+					"name": "Yellow"
+				},
+				{
+					"slug": "lilac",
+					"color": "#D4C2FF",
+					"name": "Lilac"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Bossa",
+					"slug": "font-base",
+					"name": "Bossa"
+				},
+				{
+					"fontFamily": "Monument",
+					"slug": "font-display",
+					"name": "Monument"
+				},
+				{
+					"fontFamily": "Swear-Text",
+					"slug": "font-heading",
+					"name": "Swear-text"
+				},
+				{
+					"fontFamily": "Palmer-lake",
+					"slug": "font-cool",
+					"name": "Palmer-lake"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "13px",
+					"name": "Small"
+				},
+				{
+					"slug": "regular",
+					"size": "17px",
+					"name": "Regular"
+				},
+				{
+					"slug": "medium",
+					"size": "25px",
+					"name": "Medium"
+				},
+				{
+					"slug": "big",
+					"size": "53px",
+					"name": "Big"
+				},
+				{
+					"slug": "extra-large",
+					"size": "80px",
+					"name": "80px"
+				}
+
+			]
+		},
+		"layout": {
+			"contentSize": "1630px",
+			"wideSize": "1630px"
+		}
+
+	},
+	"styles": {
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "Swear-Text, serif"
+				}
+			}
+		},
+		"typography":{
+			"fontFamily": "Bossa",
+			 "fontSize": "17px",
+			 "fontWeight": "400",
+			 "lineHeight": "1.35"
+		}, "color": {
+			"text": "var(--wp--preset--color--blue)"
+		}
+	}
+}

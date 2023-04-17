@@ -1,0 +1,254 @@
+@import "./custom/file-header.css";
+/**
+ * The line above injects the WordPress file header. It needs to be first,
+ * before this comment.
+ */
+
+/**
+ * This injects custom `@font-face` rules.
+ */
+@import "./custom/fonts.css";
+@import "./custom/oddities-icon.css";
+
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins, then adds custom base styles.
+ */
+@import "tailwindcss/base";
+@import "./custom/base.css";
+
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins, then adds custom component classes.
+ *
+ * The `@import-glob` line imports all CSS files from the `components`
+ * directory (except for `components.css`, which is imported on the following
+ * line). This is meant to simplify the process of integrating styles from
+ * JavaScript components or WordPress plugins.
+ */
+@import "tailwindcss/components";
+@import-glob "./custom/components/**/!(components).css";
+@import "./custom/components/components.css";
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins, then adds custom utility classes.
+ */
+@import "tailwindcss/utilities";
+@import "./custom/utilities.css";
+
+/* *************************** */
+/* Hamburger menu */
+/* *************************** */
+.hamburger .line {
+	width: 40px;
+	height: 3px;
+	display: block;
+	margin: 4px auto;
+	transition: all 0.3s ease-in-out;
+}
+
+input#hamburger-icon:checked ~ #hamburger-1 .line:nth-child(2) {
+	opacity: 0;
+}
+
+input#hamburger-icon:checked ~ #hamburger-1 .line:nth-child(1) {
+	transform: translateY(7px) rotate(45deg);
+}
+
+input#hamburger-icon:checked ~ #hamburger-1 .line:nth-child(3) {
+	transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* *************************** */
+/* Hamburger menu */
+/* *************************** */
+.offcanvas{
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.offcanvas.active {
+	visibility: visible;
+	opacity: 1;
+	height: 100%;
+}
+
+.body.toggled{
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/* *************************** */
+/* form footer */
+/* *************************** */
+
+footer .newsletter input:not([type=checkbox]){
+	width: 100%;
+	border-width: 2px;
+	border-color: var(--wp--preset--color--pink);
+	padding: 10px 15px;
+	height: 50px;
+}
+footer .newsletter .field input{
+	background-color: var(--wp--preset--color--blue);
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	color: var(--wp--preset--color--pink);
+	font-size: 17px;
+}
+
+footer .newsletter .field input::placeholder{
+	color: var(--wp--preset--color--pink);
+	font-size: 17px;
+}
+
+footer .newsletter .button, footer .newsletter .button input{
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	font-family: 'Monument';
+	color: var(--wp--preset--color--blue);
+	font-size: 13px;
+}
+
+footer .newsletter .button input{
+	padding-right: 20px;
+}
+
+footer .newsletter .wpcf7-spinner{
+	display: none;
+}
+
+.items-start{
+	align-items: flex-start;
+}
+
+
+/* Aceptance mark  */
+
+/* Create a custom checkbox */
+footer .newsletter .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: var(--wp--preset--color--pink);
+  }
+
+/* ******************************* */
+/* Bottom menu footer  */
+/* ******************************* */
+#menu-bottom-footer-menu li
+{
+	width: calc(50% - 5px);
+	margin: 5px 0;
+}
+
+#menu-bottom-footer-menu li:first-child
+{
+	width: 100%;
+}
+#menu-bottom-footer-menu li:first-child span
+{
+	background-color: var(--wp--preset--color--pink);
+	color: var(--wp--preset--color--blue);
+}
+
+#menu-bottom-footer-menu li:first-child span:hover{
+	background-color: var(--wp--preset--color--lilac);
+}
+
+@media (min-width: 768px) {
+	#menu-bottom-footer-menu li
+{
+	flex: 1 1 0px;
+	max-width: 250px;
+	margin:5px;
+}
+}
+
+
+/* ****************************** */
+/* Post images */
+/* ****************************** */
+
+.single-post .post-image figure{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.single-post .post-image figure img{
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
+
+/* .ellipse{
+	border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  border-top-left-radius: 50% 25%;
+  border-top-right-radius: 50% 25%;
+} */
+
+
+/* *************************** */
+/* Images in posts  */
+/* **************************** */
+@media (max-width: 769px) {
+
+body .is-layout-constrained > figure.alignright, body .is-layout-constrained > .alignleft {
+    margin-inline-start: 0 !important;
+    margin-inline-end: 0 !important;
+}
+}
+
+/* Product */
+/* **************** */
+@media screen and (min-width: 1024px){
+	.woocommerce .product .add-bar{
+		display: grid;
+		gap: 0 20px;
+		grid-template-columns: 1fr auto 1fr;
+		grid-template-rows: auto auto;
+	}
+}
+
+
+/* Marquee block  */
+/* ************************ */
+.marquee {
+	--gap: 90px;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	gap: var(--gap);
+  }
+
+  .marquee__content {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-around;
+	min-width: 100%;
+	gap: var(--gap);
+	animation: scroll 10s linear infinite;
+  }
+
+  @keyframes scroll {
+	from {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(calc(-100% - var(--gap)));
+	}
+  }
+

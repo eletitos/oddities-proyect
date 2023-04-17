@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/all-about-product",
+	"version": "0.1.0",
+	"title": "Oddities All About Block",
+	"category": "vivra-blocks",
+	"icon": "layout",
+	"description": "All about section for single products",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

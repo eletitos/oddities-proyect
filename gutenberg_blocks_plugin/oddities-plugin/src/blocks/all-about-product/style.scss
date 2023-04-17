@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+ @import '../../common.scss';
+
+.wp-block-vivra-all-about-product{
+	display: flex;
+	flex-direction: column;
+	// margin: 40px 0 50px;
+	.product-description{
+		margin-bottom: 40px;
+	}
+	// @include md{
+	// 	margin: 40px 40px 70px;
+	// }
+	@include lg{
+		flex-direction: row;
+		// margin: 90px 0 120px;
+		.product-description{
+			margin-bottom: 0;
+			padding-right: 40px;
+			max-width: 600px;
+		}
+	}
+}
+

@@ -1,0 +1,43 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+ @import '../../common.scss';
+
+.wp-block-vivra-what-do-product{
+	display: flex;
+	flex-direction: column;
+	// margin: 40px 0 50px;
+
+	.wp-block-vivra-icon-list{
+		margin-top: 30px;
+	}
+
+	@include md{
+		// margin: 40px 40px 70px;
+		.wp-block-vivra-icon-list{
+			margin-top: 60px;
+		}
+	}
+
+	@include xl{
+		flex-direction: row;
+		gap: 60px;
+		// margin: 90px 0 120px;
+		justify-content: space-between;
+		.wp-block-group{
+			width: 60%;
+
+		}
+		.wp-block-vivra-icon-list{
+			width: 40%;
+			margin-top: 0;
+		}
+
+	}
+}
+

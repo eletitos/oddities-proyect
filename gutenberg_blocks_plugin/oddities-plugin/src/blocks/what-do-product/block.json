@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/what-do-product",
+	"version": "0.1.0",
+	"title": "Oddities What do i do block",
+	"category": "vivra-blocks",
+	"icon": "layout",
+	"description": "What do i do section for single products",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

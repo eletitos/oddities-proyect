@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../common.scss';
+
+ .wp-block-vivra-headed-paragraph {
+	margin-bottom: 20px;
+	h3{
+		font-size: 21px;
+		margin-bottom: 5px;
+		margin-top: 0;
+		font-weight: 700;
+		@include md{
+			font-size: 26px;
+		}
+	}
+}

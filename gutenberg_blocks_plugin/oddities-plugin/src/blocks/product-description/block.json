@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/product-description",
+	"version": "0.1.0",
+	"title": "Product description",
+	"category": "vivra-blocks",
+	"icon": "editor-ul",
+	"parent": [
+		"vivra/all-about-product"
+	  ],
+	"description": "Product Description",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

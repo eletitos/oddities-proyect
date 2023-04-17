@@ -1,0 +1,45 @@
+// Variables and mixins
+
+// Colors.
+$black: rgb(41, 41, 41);
+$blue: #2B39D0;
+$lilac: #D4C2FF;
+$pink: #F05C7C;
+$red: #F72F32;
+$sky:#D1DCFF;
+
+// Fonts.
+$font-display: 'Monument', sans-serif;
+$font-base: 'Bossa', sans-serif;
+$font-header: 'Palm Springs', sans-serif;
+
+// Tailwind media queries
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+// media devices
+@mixin sm {
+	@media screen and (min-width: #{$sm}) {
+	  @content;
+	}
+}
+
+@mixin md {
+	@media screen and (min-width: #{$md}) {
+	  @content;
+	}
+}
+
+@mixin lg {
+	@media screen and (min-width: #{$lg}) {
+	  @content;
+	}
+}
+
+@mixin xl {
+	@media screen and (min-width: #{$xl}) {
+	  @content;
+	}
+}

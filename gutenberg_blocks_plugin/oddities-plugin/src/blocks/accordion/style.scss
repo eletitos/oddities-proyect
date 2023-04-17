@@ -1,0 +1,91 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ @import '../../common.scss';
+
+
+.wp-block-vivra-oddities-accordion {
+	border-top: solid 2px var(--wp--preset--color--blue);
+
+	.contenido{
+		overflow: hidden;
+		padding-top: 40px;
+		padding-bottom: 50px;
+		@include md{
+			padding-bottom: 70px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		@include lg{
+			padding-bottom: 120px;
+			padding-left: 7rem;
+			padding-right: 7rem;
+		}
+	}
+
+	&.expanded .contenido{
+		max-height: fit-content;
+	}
+	> summary{
+		background-color: white;
+		list-style: none;
+	}
+}
+
+
+.wp-block-vivra-oddities-accordion[open]{
+	.arrow{
+		transform: rotate(180deg);
+	}
+	summary{
+		background-color: transparent;
+	}
+}
+
+
+
+.arrow{
+	width: 25px;
+	transform-origin: center;
+	transition: all 0.2s ease-in-out;
+	@include sm{
+		width: 60px;
+	}
+	@include md{
+		width: 85px;
+	}
+}
+
+.namebar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	h2{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 23px;
+		user-select: none;
+		@include sm{
+			font-size: 30px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		@include md{
+			font-size: 50px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		@include lg{
+			font-size: 62px;
+		}
+		@include xl{
+			font-size: 85px;
+		}
+	}
+}
+

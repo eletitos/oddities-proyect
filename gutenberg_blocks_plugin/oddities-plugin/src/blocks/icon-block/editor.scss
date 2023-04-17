@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-vivra-oddities-plugin {
+	border: 1px dotted #f00;
+}
+
+.oddities-icon{
+	font-family: 'oddities-icon';
+}
+
+.icon-drop:before { content: '\e801'; } /* '' */
+.icon-fish:before { content: '\e802'; } /* '' */
+.icon-heart:before { content: '\e803'; } /* '' */
+.icon-rocket:before { content: '\e804'; } /* '' */
+.icon-smile:before { content: '\e805'; } /* '' */
+.icon-hand:before { content: '\e806'; } /* '' */
+.icon-bubbles:before { content: '\e807'; } /* '' */
+.icon-speech-icon:before { content: '\e808'; } /* '' */
+.icon-eye:before { content: '\e809'; } /* '' */
+.icon-rabbit:before { content: '\e80a'; } /* '' */
+.icon-spot:before { content: '\e80b'; } /* '' */
+.icon-star:before { content: '\e80c'; } /* '' */
+.icon-sun:before { content: '\e80d'; } /* '' */
+.icon-tape:before { content: '\e80e'; } /* '' */
+.icon-umbrella:before { content: '\e80f'; } /* '' */
+.icon-apple:before { content: '\e810'; } /* '' */
+.icon-spin:before { content: '\e830'; }

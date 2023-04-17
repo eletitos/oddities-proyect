@@ -1,0 +1,329 @@
+/* My account */
+/* **************************** */
+.woocommerce-MyAccount-navigation{
+	@apply p-0 lg:max-w-[280px];
+}
+
+.woocommerce-MyAccount-navigation ul{
+	@apply p-0 mt-0;
+}
+
+.woocommerce-MyAccount-navigation ul li{
+	@apply bg-sky  border-2 border-blue rounded-full list-none mt-0 hover:bg-yellow;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active{
+	@apply bg-lilac;
+}
+
+
+.woocommerce-MyAccount-navigation ul li a{
+	@apply font-display uppercase no-underline text-[13px] block py-2 px-5;
+}
+
+/* Error messages */
+.woocommerce-message{
+	@apply border-2 border-blue text-blue;
+}
+
+/* Product page  */
+/* ******************************** */
+.woocommerce .product .add-to-cart a.button.add_to_cart_button {
+	@apply bg-yellow font-display text-[13px] border-blue text-blue text-center w-80 rounded-full py-3;
+	border:solid 2px;
+}
+
+.woocommerce .products .product .added_to_cart.wc-forward,
+.woocommerce.single-product .added_to_cart.wc-forward,
+.woocommerce .added_to_cart.wc-forward{
+	display:none;
+}
+
+
+
+
+/* loading icon */
+
+.woocommerce a.button.loading::after{
+	content: '\e830';
+    font-family: 'oddities-icon';
+	right: unset;
+	left: unset;
+	top:10px;
+	margin-left: 10px;
+}
+
+
+
+/* Product loop page */
+/* ******************************* */
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	@apply w-full md:w-1/2 xl:w-1/4 m-0 border outline-blue border-blue;
+	outline: solid 1px;
+}
+
+.woocommerce ul.products{
+	@apply mb-0;
+}
+
+.woocommerce .products .product .add-to-cart a.button.add_to_cart_button,
+.woocommerce .product .add-to-cart .wp-element-button.product_type_simple,
+.woocommerce ul.products li.product .add-to-cart .product_type_woosb
+{
+	@apply font-display bg-white text-[13px] border-blue text-blue text-center w-64 rounded-full py-3 hover:bg-yellow mt-0;
+	border:solid 2px;
+    z-index: 5;
+}
+
+.woocommerce a.odd-button.button.add_to_cart_button{
+	@apply font-display bg-yellow text-[13px] border-blue text-blue text-center uppercase rounded-full py-3 px-12 hover:bg-lilac mt-0;
+	border:solid 2px;
+
+}
+
+.woocommerce .products .product a.woocommerce-LoopProduct-link{
+	@apply block h-full relative;
+}
+
+/* Reviews */
+/* ******************************* */
+
+.woocommerce .star-rating::before{
+	@apply text-blue;
+}
+
+.woocommerce.single-product #reviews .stars{
+	@apply w-fit text-[18px];
+}
+
+.woocommerce.single-product #reviews #comments ol.commentlist{
+	@apply max-w-6xl m-auto;
+
+}
+
+.woocommerce.single-product #reviews #comments li .comment_container .comment-text{
+	@apply bg-sky border-none ml-0 rounded-md;
+}
+
+.woocommerce.single-product #reviews #comments li .comment_container .comment-text
+.meta
+{
+	@apply font-cool text-[35px] text-blue mb-0 -translate-y-[17px]
+}
+
+.woocommerce.single-product #reviews #comments li .comment_container .comment-text
+.meta .woocommerce-review__author{
+	@apply font-normal;
+}
+
+.woocommerce.single-product div.product .woocommerce-product-rating{
+	@apply mb-0 lg:mb-6;
+}
+
+/* Selectors */
+/* ************** */
+.select2-container--open .select2-dropdown{
+	@apply border-blue border-2;
+	/* border: 2px solid; */
+	border-radius: 20px;
+	border-top-width: 2px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+
+.select2-selection__rendered .select2-selection__placeholder{
+	@apply text-blue;
+}
+
+.select2-container--open .select2-dropdown .select2-search__field{
+	@apply border-blue;
+	border-radius:50px;
+	border: 1px solid
+}
+
+.select2-container--open .select2-dropdown .select2-results{
+	border-bottom-left-radius: 19px;
+	border-bottom-right-radius: 19px;
+	font-size: 13px;
+	overflow: hidden;
+}
+
+.select2-container--open .select2-dropdown .select2-results .select2-results__option--highlighted{
+	@apply bg-blue;
+}
+
+/* Actually selected option */
+
+.select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option[data-selected=true]{
+	@apply bg-sky;
+}
+
+/* CHECKOUT */
+/* ******************************* */
+
+#content .woocommerce .checkout .coupon-input input {
+	@apply rounded-r-none mt-0;
+	line-height: normal;
+}
+
+#content .woocommerce .checkout .coupon-submit button {
+	@apply rounded-r-full bg-blue uppercase text-[13px] text-white font-display h-full pr-5;
+	line-height: normal;
+}
+
+.woocommerce-checkout .woocommerce{
+	@apply mt-8 md:mt-10;
+}
+
+/* Layout of the checkout page  */
+#content .woocommerce .checkout .col2-set .col-2{
+	@apply w-full md:w-[38%];
+}
+
+#content .woocommerce .checkout .col2-set .col-1{
+	@apply w-full md:w-[58%];
+}
+
+.woocommerce table.shop_table{
+	@apply border-none border-collapse;
+}
+
+.woocommerce table.shop_table td{
+	@apply border-t-0;
+}
+
+.woocommerce table.shop_table td img{
+	@apply my-1;
+}
+
+.woocommerce table.shop_table td.product-thumbnail, .woocommerce table.shop_table td.product-name{
+	@apply align-top;
+}
+
+.woocommerce table.shop_table tfoot tr{
+	@apply border-t-2 border-blue;
+}
+
+.woocommerce table.shop_table tfoot th{
+	@apply font-display uppercase text-[13px];
+}
+
+.blockUI.blockOverlay{
+	z-index: 8 !important;
+}
+
+
+ /* Payment */
+/* ********************************** */
+
+.woocommerce-checkout #payment{
+	background-color: var(--wp--preset--color--ligth-blue) !important;
+}
+
+.woocommerce-checkout #payment div.payment_box{
+	background-color: var(--wp--preset--color--ligth-blue)
+}
+
+.woocommerce-checkout #payment div.payment_box::before{
+	border: none;
+}
+
+#stripe-payment-data{
+	color: var(--wp--preset--color--blue);
+
+}
+
+.payment_box.payment_method_stripe{
+
+	border-top: solid 2px var(--wp--preset--color--blue);
+	border-bottom: solid 2px var(--wp--preset--color--blue);
+}
+
+.payment_box.payment_method_stripe label{
+	font-size: 13px
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order{
+	width: 100%;
+	border-radius: 80px;
+	margin-top: 20px;
+	border: solid 2px var(--wp--preset--color--blue);
+	background-color: var(--wp--preset--color--yellow);
+	color: var(--wp--preset--color--blue);
+	text-transform: uppercase;
+	font-family: 'Monument';
+	height: 49px;
+}
+
+.woocommerce #payment #place_order:hover, .woocommerce-page #payment #place_order:hover{
+	border: solid 2px var(--wp--preset--color--blue);
+	background-color: var(--wp--preset--color--lilac);
+	color: var(--wp--preset--color--blue);
+}
+
+.wc-stripe-elements-field{
+	padding: 14px !important;
+	border: solid 2px !important;
+	border-radius: 80px
+}
+
+.woocommerce-checkout #payment ul.payment_methods{
+	border-bottom: solid 5px white;
+}
+
+.form-row.place-order p{
+	font-size: 13px;
+}
+
+.woocommerce-checkout-payment .form-row{
+	margin-top: 5px !important
+}
+
+.woocommerce-checkout-payment .woocommerce-SavedPaymentMethods-saveNew{
+	display: flex !important;
+}
+
+.woocommerce form .form-row label{
+	line-height: 1.4;
+}
+
+
+/* MYACCOUNT */
+/* ******************************* */
+.woocommerce-MyAccount-content table a.woocommerce-button{
+	@apply bg-blue text-white font-display uppercase text-[13px] py-2 px-5 rounded-full border-blue hover:bg-yellow  hover:text-blue;
+	border: solid 2px;
+}
+
+/* Change woocommerce adresses styles */
+.woocommerce-MyAccount-content .woocommerce-Address, .woocommerce  .woocommerce-customer-details address{
+	@apply bg-sky rounded-lg p-5 border-none;
+}
+
+.woocommerce-MyAccount-content .woocommerce-Address address, .woocommerce-customer-details address{
+	@apply text-[13px] not-italic;
+}
+
+.woocommerce-MyAccount-content .woocommerce-Address a{
+	@apply text-[13px] bg-blue rounded-full uppercase font-display py-2 px-5 text-white no-underline leading-none hover:bg-yellow hover:text-blue border-2 border-blue;
+}
+
+/* Woocommerce info */
+.woocommerce-info,
+.woocommerce-error{
+	@apply bg-sky rounded-lg p-5 border-none text-blue;
+}
+
+.woocommerce-info::before,
+.woocommerce-error::before{
+	content: '' !important;
+}
+
+.woocommerce-info a{
+	@apply text-white px-5 py-2 bg-blue rounded-full text-[13px] no-underline ml-4 font-display;
+}
+
+#login-page .woocommerce{
+	max-width: 650px;
+}
+

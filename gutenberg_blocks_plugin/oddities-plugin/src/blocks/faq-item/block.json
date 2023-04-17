@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/faq-item",
+	"version": "0.1.0",
+	"title": "FAQ item",
+	"category": "vivra-blocks",
+	"icon": "text",
+	"description": "Icon list",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"listHeading": {
+			"type": "string",
+			"default": "FAQ sentence"
+		}
+	}
+}

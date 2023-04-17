@@ -1,0 +1,21 @@
+/* Marquee */
+/* ************************ */
+
+.marquee ul.marquee__content{
+	@apply mt-0 mb-0
+}
+
+.marquee ul.marquee__content li{
+	@apply mt-0 mb-0
+}
+
+.entry-content > .is-layout-constrained.alignfull > .marquee{
+	@apply px-0 mx-0
+}
+
+/* Products shortcode */
+/* ************************ */
+ul.products figure{
+	@apply my-0;
+}
+

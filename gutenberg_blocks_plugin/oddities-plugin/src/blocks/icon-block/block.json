@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/custom-icon",
+	"version": "0.1.0",
+	"title": "Elena Icons",
+	"category": "vivra-blocks",
+	"icon": "smiley",
+	"description": "Example icon block.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"size": {
+			"type": "number",
+			"default": 33
+		},
+		"color": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"iconSlug": {
+			"type": "string",
+			"default": "hand"
+		}
+	}
+}

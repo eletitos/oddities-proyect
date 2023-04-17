@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "vivra/headed-paragraph",
+	"version": "0.1.0",
+	"title": "Product Headed Paragraph",
+	"category": "vivra-blocks",
+	"icon": "text",
+	"description": "Icon list",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "oddities-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"listHeading": {
+			"type": "string",
+			"default": "List Heading"
+		},
+		"listText": {
+			"type": "string",
+			"default": "List Text"
+		}
+	}
+}

@@ -1,0 +1,59 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+
+ @font-face {
+    font-family: 'Bossa';
+    src: url('fonts/bossa/Bossa-Regular.woff2') format('woff2'),
+    url('fonts/bossa/Bossa-Regular.woff') format('woff'),
+	url('fonts/bossa/Bossa-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: 400;
+	font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Bossa';
+    src: url('fonts/bossa/Bossa-Bold.woff2') format('woff2'),
+    url('fonts/bossa/Bossa-Bold.woff') format('woff'),
+	url('fonts/bossa/Bossa-Bold.otf') format('opentype');
+    font-style: normal;
+    font-weight: 700;
+	font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url('fonts/monument-extended/PPMonumentExtended-Bold.woff2') format('woff2'),
+    url('fonts/monument-extended/PPMonumentExtended-Bold.woff') format('woff'),
+	url('fonts/monument-extended/PPMonumentExtended-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+	font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Swear-Text';
+    src: url('fonts/swear-text/Swear_Text-Black.woff2') format('woff2'),
+    url('fonts/swear-text/Swear_Text-Black.woff') format('woff'),
+	url('fonts/swear-text/Swear_Text-Black.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+	font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Palmer-lake';
+	src: url('fonts/palmer-lake/PalmerLakePrint-Regular.woff2') format('woff2'),
+    url('fonts/palmer-lake/PalmerLakePrint-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+	font-display: swap;
+    text-rendering: optimizeLegibility;
+}

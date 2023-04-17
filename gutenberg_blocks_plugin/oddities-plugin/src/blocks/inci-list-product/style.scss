@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+ @import '../../common.scss';
+
+.wp-block-vivra-inci-list-product{
+	display: flex;
+	flex-direction: column;
+	// margin: 40px 0 50px;
+
+	.wp-block-vivra-active-compound {
+		.star-container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+	}
+
+	@include md{
+		// margin: 40px 40px 70px;
+		.wp-block-vivra-active-compound {
+			.compound-wrap{
+				display: flex;
+				gap: 30px;
+
+				.wp-block-vivra-headed-paragraph-list{
+					width: 50%;
+				}
+			}
+		}
+	}
+	@include lg{
+		flex-direction: row;
+		gap: 60px;
+		// margin: 90px 0 120px;
+		justify-content: space-between;
+		.wp-block-vivra-active-compound{
+			width: 60%;
+
+		}
+		> .wp-block-vivra-headed-paragraph-list{
+			width: 40%;
+			max-width: 450px;
+		}
+
+		.star-container{
+			transform: translatey(-40px);
+		}
+	}
+}
+
+
+
+
+// 	.compound-wrap{
+// 		display: flex;
+// 	}
+
+// }
